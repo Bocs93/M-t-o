@@ -72,6 +72,7 @@ input {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 
 .hour, .day {
@@ -94,6 +95,17 @@ input {
 .sun-icon {
   width: 160px;
   height: 160px;
+}
+
+#suggestions-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  width: 25%;
+  color: black;
 }
 
 @media (max-width: 500px) {

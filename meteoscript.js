@@ -45,7 +45,7 @@ input.addEventListener("input", () => {
           suggestionsContainer.innerHTML = "";
 
           // 🏙️ Affiche la ville sélectionnée
-          cityDisplay.textContent = `Votre bulletin météo du jour pour : ${commune.nom}`;
+          cityDisplay.textContent = `votre bulletin météo du jour pour : ${commune.nom}`;
 
           // ☁️ Récupère la météo
           fetchHourlyForecast(commune.nom);
@@ -66,7 +66,7 @@ input.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     const city = input.value.trim();
     if (city) {
-      cityDisplay.textContent = `Votre bulletin météo du jour pour : ${city}`;
+      cityDisplay.textContent = `Voici votre bulletin météo du jour pour : ${city}`;
       fetchHourlyForecast(city);
       suggestionsContainer.innerHTML = "";
     }
